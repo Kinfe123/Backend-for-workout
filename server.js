@@ -18,7 +18,7 @@ app.use((req , res , next)=>{
 })
 app.use( '/api/workouts', workoutRouter)
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://kinfishnew:kinfe191425@mernapp.pe83fvq.mongodb.net/?retryWrites=true&w=majority")
     .then(()=>{
         app.listen(PORT , ()=>{
             console.log('The server is running and we are connected to database: ' , PORT)
