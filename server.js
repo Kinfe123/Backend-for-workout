@@ -9,7 +9,7 @@ import express from 'express'
 import workoutRouter from './routes/workouts.js' 
 const app = express()
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000
 // to parse and work with json in body
 app.use(express.json())
 app.use((req , res , next)=>{
